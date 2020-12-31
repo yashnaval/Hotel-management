@@ -51,7 +51,7 @@
       </div> <!-- end login -->
 
     </div>
-    <div class="bottom">  <h3><a href="../index.php">ABHI'S HOTEL</a></h3></div>
+    <div class="bottom">  <h3><a href="../index.php">Abhi's Hotel</a></h3></div>
   
   
 </body>

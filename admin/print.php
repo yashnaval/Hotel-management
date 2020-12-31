@@ -198,20 +198,20 @@ tr:hover .cut { opacity: 1; }
 									$type_of_room = 0;       
 									if($troom=="Superior Room")
 									{
-										$type_of_room = 15000;
+										$type_of_room = 320;
 									
 									}
 									else if($troom=="Deluxe Room")
 									{
-										$type_of_room = 12000;
+										$type_of_room = 220;
 									}
 									else if($troom=="Guest House")
 									{
-										$type_of_room = 9000;
+										$type_of_room = 180;
 									}
 									else if($troom=="Single Room")
 									{
-										$type_of_room = 6000;
+										$type_of_room = 150;
 									}
 									
 									if($bed=="Single")
@@ -256,9 +256,10 @@ tr:hover .cut { opacity: 1; }
 			<h1>Invoice</h1>
 			<address >
 				<p>Abhi's Hotel,</p>
-				<p>Akurdi,<br>Pune,<br>India.</p>
-				<p>+91 9420564214</p>
+				<p>Akurdi,<br>Pimpiri Chinchwad,<br>Pune,<br>India.</p>
+				<p>(+91) 9420564214</p>
 			</address>
+			
 		</header>
 		<article>
 			<h1>Recipient</h1>
@@ -290,23 +291,23 @@ tr:hover .cut { opacity: 1; }
 					<tr>
 						<td><span ><?php echo $troom; ?></span></td>
 						<td><span ><?php echo $days; ?> </span></td>
-						<td><span data-prefix>₹</span><span ><?php  echo $type_of_room;?></span></td>
+						<td><span data-prefix>$</span><span ><?php  echo $type_of_room;?></span></td>
 						<td><span ><?php echo $nroom;?> </span></td>
-						<td><span data-prefix>₹</span><span><?php echo $ttot; ?></span></td>
+						<td><span data-prefix>$</span><span><?php echo $ttot; ?></span></td>
 					</tr>
 					<tr>
 						<td><span ><?php echo $bed; ?>  Bed </span></td>
 						<td><span ><?php echo $days; ?></span></td>
-						<td><span data-prefix>₹</span><span ><?php  echo $type_of_bed;?></span></td>
+						<td><span data-prefix>$</span><span ><?php  echo $type_of_bed;?></span></td>
 						<td><span ><?php echo $nroom;?> </span></td>
-						<td><span data-prefix>₹</span><span><?php echo $btot; ?></span></td>
+						<td><span data-prefix>$</span><span><?php echo $btot; ?></span></td>
 					</tr>
 					<tr>
 						<td><span ><?php echo $meal; ?>  </span></td>
 						<td><span ><?php echo $days; ?></span></td>
-						<td><span data-prefix>₹</span><span ><?php  echo $type_of_meal?></span></td>
+						<td><span data-prefix>$</span><span ><?php  echo $type_of_meal?></span></td>
 						<td><span ><?php echo $nroom;?> </span></td>
-						<td><span data-prefix>₹</span><span><?php echo $mepr; ?></span></td>
+						<td><span data-prefix>$</span><span><?php echo $mepr; ?></span></td>
 					</tr>
 				</tbody>
 			</table>
@@ -314,26 +315,27 @@ tr:hover .cut { opacity: 1; }
 			<table class="balance">
 				<tr>
 					<th><span >Total</span></th>
-					<td><span data-prefix>₹</span><span><?php echo $fintot; ?></span></td>
+					<td><span data-prefix></span><span><?php echo $fintot; ?></span></td>
 				</tr>
 				<tr>
 					<th><span >Amount Paid</span></th>
-					<td><span data-prefix>₹</span><span >0.00</span></td>
+					<td><span data-prefix></span><span >0.00</span></td>
 				</tr>
 				<tr>
 					<th><span >Balance Due</span></th>
-					<td><span data-prefix>₹</span><span><?php echo $fintot; ?></span></td>
+					<td><span data-prefix></span><span><?php echo $fintot; ?></span></td>
 				</tr>
 			</table>
 		</article>
 		<aside>
 			<h1><span >Contact us</span></h1>
 			<div >
-				<p align="center">Email :- mailabhishek@gmail.com || Web :- www.abhishotel.com || Phone :- +91 9420564214</p>
+				<p align="center">Email :- info@abhi's.com || Web :- www.abhi.com || Phone :- +91 9420562414 </p>
 			</div>
 		</aside>
 	</body>
 </html>
+
 <?php 
 
 ob_end_flush();

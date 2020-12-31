@@ -31,6 +31,24 @@
                 <a class="navbar-brand" href="home.php"> <?php echo $_GET['user']?> </a>
             </div>
 
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="usersetting.php"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="settings.php"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="signup.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
         </nav>
         <!--/. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
@@ -38,12 +56,12 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a class="active-menu" href="home.php"><i class="fa "></i> Status</a>
+                        <a class="active-menu" href="home.php"><i class="fa fa-dashboard"></i> Status</a>
                     </li>
                      <li>
                         <?php $user=$_GET['user'];
                             $url="payment.php?user=".$user;
-                            echo "<a href='$url'>Payments</a>"?><i class="fa "></i>
+                            echo "<a href='$url'>Payments</a>"?><i class="fa fa-qrcode"></i>
                     </li>
                     <li>
                         <a href="index.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
@@ -51,7 +69,7 @@
                     <li>
                         <?php $user=$_GET['user'];
                             $url="proj.php?user=".$user;
-                            echo "<a href='$url'>Homepage</a>"?><i class="fa "></i>
+                            echo "<a href='$url'>Homepage</a>"?><i class="fa fa-qrcode"></i>
                     </li>
 					</ul>
 

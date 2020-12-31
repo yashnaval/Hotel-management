@@ -9,7 +9,7 @@ $user=$_GET['user'];
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RESERVATION ABHI'S HOTEL</title>
+    <title>RESERVATION SUNRISE HOTEL</title>
 	<!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
@@ -158,8 +158,12 @@ $user=$_GET['user'];
                                             <select name="nroom" class="form-control" required>
 												<option value selected ></option>
                                                 <option value="1">1</option>
-                                                <!--<option value="2">2</option>
-												<option value="3">3</option>-->
+                                              <!--  <option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option> -->
                                             </select>
                               </div>
 							 

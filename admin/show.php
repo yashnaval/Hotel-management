@@ -194,10 +194,11 @@ tr:hover .cut { opacity: 1; }
 		<header>
 			<h1>Information of Guest</h1>
 			<address >
-				<p>ABHI'S HOTEL,</p>
+				<p>SUN RISE HOTEL,</p>
 				<p>Akurdi,Pune,<br>India.</p>
 				<p>(+91) 9420564214</p>
 			</address>
+			<span><img alt="" src="assets/img/sun.png"></span>
 		</header>
 		<article>
 			<h1></h1>
@@ -275,7 +276,7 @@ tr:hover .cut { opacity: 1; }
 		<aside>
 			<h1><span >Contact us</span></h1>
 			<div >
-				<p align="center">Email :- mailabhishek@gmail.com || Web :- www.abhishotel.com || Phone :- +(91) 9420564214</p>
+				<p align="center">Email :- mailabhishek@gmail.com || Web :- www.sunrise.com || Phone :- +(91) 9420564214</p>
 			</div>
 		</aside>
 	</body>

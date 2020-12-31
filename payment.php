@@ -32,7 +32,24 @@
                  <a class="navbar-brand" href="home.php"> <?php echo $_GET['user']?> </a>a>
             </div>
 
- 
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="usersetting.php"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="settings.php"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
         </nav>
         <!--/. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
@@ -42,7 +59,13 @@
                     <li>
                         <?php $user=$_GET['user'];
                             $url="userpanel.php?user=".$user;
-                            echo "<a href='$url'>Status</a>"?><i class="fa"></i>
+                            echo "<a href='$url'>Status</a>"?><i class="fa fa-dashboard"></i>
+                    </li>
+					<li>
+                        <a href="roombook.php"><i class="fa fa-bar-chart-o"></i>Room Booking</a>
+                    </li>
+                    <li>
+                        <a href="payment.php"><i class="fa fa-bar-chart-o"></i>Payments</a>
                     </li>
                     <li>
                         <a href="index.php" ><i class="fa fa-sign-out fa-fw"></i> Logout</a>
